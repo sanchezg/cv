@@ -1,5 +1,5 @@
 # CV
-Personal CV using [ModernCV|https://github.com/xdanaux/moderncv] package.
+Personal CV using [ModernCV](https://github.com/xdanaux/moderncv) package.
 
 Compile it with: `pdflatex cv_gsanchez_eng.tex`
 
