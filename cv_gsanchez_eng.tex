@@ -1,0 +1,44 @@
+%% Inicio del archivo `template-es.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}   % opciones posibles incluyen tamaño de fuente ('10pt', '11pt' and '12pt'), tamaño de papel ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' y 'landscape') y familia de fuentes ('sans' y 'roman')
+
+% temas de moderncv
+\moderncvstyle{casual} % las opciones de estilo son 'casual' (por omision),'classic', 'oldstyle' y 'banking'
+\moderncvcolor{green} % opciones de color 'blue' (por omision), 'orange', 'green', 'red', 'purple', 'grey' y 'black'
+
+% ajustes para los margenes de pagina
+\usepackage[scale=0.75]{geometry}
+
+\input{input/personal_data.tex}
+
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{About me}
+\cvitem
+    {}
+    {Computer Engineer. Enjoy team working for innovative software solutions and using new technologies.}{}
+    % \newline
+
+% --- Education
+% makes a typical resume job / education entry
+% usage: \cventry[spacing]{years}{degree/job title}{institution/employer}{localization}{optionnal: grade/...}{optional: comment/job description}
+\input{input/skills.tex}
+\input{input/experience.tex}
+\input{input/education.tex}
+
+\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                   % 'publications' es el nombre del archivo BibTeX
+
+\end{document}
+
+
+%% fin del archivo `template-es.tex'.
