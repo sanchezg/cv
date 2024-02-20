@@ -1,37 +1,30 @@
-%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
-%
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
+\documentclass[10pt,a4paper,sans]{article}
+\usepackage[left=0.75in, right=0.75in, top=0.8in, bottom=0.8in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
 
-\documentclass[10pt,a4paper,sans]{moderncv}
+\definecolor{sectioncolor}{RGB}{0,102,102}
+\definecolor{subsectioncolor}{RGB}{64,64,64}
 
-\moderncvstyle{casual}
-\moderncvcolor{green}
+\titleformat{\section}{\large\bfseries\color{sectioncolor}}{}{0em}{}[\titlerule]
+\titleformat{\subsection}[runin]{\bfseries\color{subsectioncolor}}{}{0em}{}[]
 
-\usepackage[scale=0.85]{geometry}
-
-\input{input/personal_data.tex}
+\begin{document}
+\pagestyle{empty}
 
 %----------------------------------------------------------------------------------
-\begin{document}
+\input{input/personal_data.tex}
 
-\setlength{\hintscolumnwidth}{0.175\textwidth}  % Default value 0.175
-\renewcommand*{\hintfont}{\normalsize\mdseries\upshape}
-
-\maketitle
-
-\section{Personal Summary}
-  \cvitem
-    {}
-    {As a software engineer, I am a self-starter with a strong commitment to delivering data-driven, user-friendly solutions. I believe in keeping things simple, and I am always seeking new ways to improve the user experience. My goal is to develop efficient and effective software that meets the needs of both the end-user and the business.}{}
+\section*{\faIcon{user} Personal Summary}
+As a software engineer, I excel in architecting performance-focused solutions. I specialize in crafting robust APIs and automating mundane tasks. My approach prioritizes user-oriented, data-driven design to deliver simple yet effective solutions to complex problems.
+% My goal is to optimize software for both user satisfaction and business needs.
 
 \input{input/experience.tex}
 \input{input/education.tex}
 \input{input/skills.tex}
-
-\nocite{*}
-%\bibliographystyle{plain}
-%\bibliography{publications}
 
 \end{document}
