@@ -1,17 +1,20 @@
 \documentclass[10pt,a4paper,sans]{article}
-\usepackage[left=0.75in, right=0.75in, top=0.8in, bottom=0.8in]{geometry}
+\usepackage[left=0.75in, right=0.75in, top=0.7in, bottom=0.7in]{geometry}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{parskip}
 \usepackage{xcolor}
 \usepackage{fontawesome5}
 \usepackage[hidelinks]{hyperref}
+% \usepackage{lmodern}
 
 \definecolor{sectioncolor}{RGB}{0,102,102}
 \definecolor{subsectioncolor}{RGB}{64,64,64}
 
 \titleformat{\section}{\large\bfseries\color{sectioncolor}}{}{0em}{}[\titlerule]
 \titleformat{\subsection}[runin]{\bfseries\color{subsectioncolor}}{}{0em}{}[]
+% \titlespacing*{\section}{0pt}{1.5ex plus 1ex minus .2ex}{0.75ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{1.5ex plus 1ex minus .2ex}{0.75ex plus .2ex}
 
 \begin{document}
 \pagestyle{empty}
